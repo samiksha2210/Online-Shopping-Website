@@ -1,0 +1,96 @@
+.order-summary-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgb(42 82 161 / 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.order-summary-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2a52a1; /* blue */
+  margin-bottom: 25px;
+}
+
+.order-summary-container h3 {
+  margin-top: 25px;
+  color: #1a2d5d;
+  font-weight: 700;
+  font-size: 22px;
+  border-bottom: 2px solid #c4d3f6;
+  padding-bottom: 6px;
+}
+
+.order-info {
+  font-size: 18px;
+  color: #526a9c;
+  margin-bottom: 10px;
+}
+
+.items-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.items-list li {
+  padding: 12px 15px;
+  border: 1.3px solid #c4d3f6;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  background-color: #f9fbff;
+  color: #1a2d5d;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.items-list li span {
+  font-weight: 400;
+  color: #526a9c;
+}
+
+.total-price {
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #2a52a1;
+  text-align: right;
+}
+
+.back-button {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 26px;
+  background-color: #2a52a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  width: fit-content;
+}
+
+.back-button:hover {
+  background-color: #1f3c78;
+}
+
+@media (max-width: 480px) {
+  .order-summary-container {
+    padding: 20px 20px;
+    margin: 30px 15px;
+  }
+  
+  .items-list li {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

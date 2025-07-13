@@ -1,0 +1,25 @@
+ID,name,price,stock,image
+1,Wireless Mouse,499.99,13.0,wireless_mouse.jpg
+2,Laptop Stand,350.0,29.0,laptop_stand.jpg
+3,Lightning Cable,1000.0,18.0,lightning_cable.jpg
+4,Smart Watch,5000.0,23.0,smart_watch.jpg
+5,Headphones,3000.0,0.0,headphones.jpg
+6,Wireless Charger,3500.0,38.0,wireless_charger.jpg
+7,Gaming Console,30000.0,29.0,gaming_console.jpg
+8,Wifi Modem,4000.0,50.0,wifi_modem.jpg
+9,Television,50000.0,59.0,tv.jpg
+10,Speaker,10000.0,30.0,speaker.jpg
+11,Trimmer,4000.0,50.0,trimmer.jpg
+12,Vacuum Robot,30000.0,45.0,vacuum_robot.jpg
+13,Selfie Stick,3000.0,35.0,selfie_stick.jpg
+14,Projector,20000.0,55.0,projector.jpg
+15,Extender,900.0,45.0,extender.jpg
+16,Iphone 16,80000.0,70.0,iphone_16.jpg
+17,Macbook,90000.0,64.0,macbook.jpg
+18,Airpods,30000.0,80.0,airpods.jpg
+19,Alexa,15000.0,30.0,alexa.jpg
+20,Instax Polaroid Camera,5000.0,68.0,instax_poloroid.jpg
+21,Set Top Box,1000.0,60.0,set_top_box.jpg
+22,Mag Safe case,3000.0,10.0,magsafe_case.jpg
+23,Tablet,30000.0,24.0,tablet.jpg
+24,CCTV Camera,5000.0,100.0,cctv.jpg

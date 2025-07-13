@@ -1,0 +1,105 @@
+/* Container styles */
+.user-orders-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgb(42 82 161 / 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Heading */
+.user-orders-container h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #2a52a1; /* blue */
+  margin-bottom: 30px;
+}
+
+/* No orders message */
+.user-orders-container p {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Orders list */
+.orders-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Individual order card */
+.order-card {
+  background-color: #f9fbff;
+  border: 1.5px solid #c4d3f6;
+  border-radius: 12px;
+  padding: 18px 25px;
+  margin-bottom: 22px;
+  box-shadow: 0 6px 20px rgb(58 111 209 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  box-shadow: 0 10px 32px rgb(58 111 209 / 0.3);
+}
+
+/* Order details line */
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #1a2d5d;
+}
+
+.order-detail span {
+  color: #526a9c;
+  font-weight: 400;
+}
+
+/* Horizontal separator */
+.order-separator {
+  border: none;
+  border-top: 1px solid #c4d3f6;
+  margin: 12px 0 0 0;
+}
+
+/* Back button styling */
+.back-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 12px 26px;
+  background-color: #2a52a1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  width: fit-content;
+}
+
+.back-button:hover {
+  background-color: #1f3c78;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .user-orders-container {
+    padding: 20px 20px;
+    margin: 30px 15px;
+  }
+  
+  .order-detail {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

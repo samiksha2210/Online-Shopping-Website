@@ -1,0 +1,79 @@
+/* AdminLogin.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background: softened blue diagonals, top-right to bottom-left */
+.admin-login-container {
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    45deg,
+    #2c64c8 0px,
+    #2c64c8 40px,
+    #3a75d9 40px,
+    #3a75d9 80px
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* White rounded box */
+.admin-login-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  text-align: center;
+}
+
+/* Heading */
+.admin-login-box h2 {
+  color: #003d99;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Input fields */
+.admin-login-box input {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin: 10px 0;
+  border: 2px solid #2c64c8;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Highlighted input on focus */
+.admin-login-box input:focus {
+  border-color: #66ccff;
+  box-shadow: 0 0 6px #66ccff;
+}
+
+/* Login button */
+.admin-login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #2c64c8;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-login-box button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,308 @@
+/* Full page background blue */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #2a52a1; /* strong medium blue */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3a3a3a;
+}
+
+/* Main container with white bg and subtle shadow */
+.user-dashboard-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.15);
+  min-height: calc(100vh - 80px);
+}
+
+/* Header area with very light blue */
+.user-dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #c4d3f6;
+  padding: 15px 20px;
+  background-color: #e8f0fe; /* very pale blue */
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgb(58 111 209 / 0.2);
+}
+
+.user-dashboard-header h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1a2d5d; /* dark navy blue */
+}
+
+/* Buttons styling */
+.user-dashboard-header button.logout-btn {
+  background-color: #d32f2f;
+  color: white;
+  border: 1.5px solid #b92a2a;
+  padding: 10px 18px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.user-dashboard-header button.logout-btn:hover {
+  background-color: #9a2222;
+  border-color: #7c1a1a;
+}
+
+.user-dashboard-header button:not(.logout-btn) {
+  background-color: #3a6fd1;
+  color: white;
+  border: 1.5px solid #335fbb;
+  padding: 10px 18px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgb(58 111 209 / 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.user-dashboard-header button:not(.logout-btn):hover {
+  background-color: #2a52a1;
+  border-color: #223f7c;
+  box-shadow: 0 4px 12px rgb(42 82 161 / 0.7);
+}
+
+/* Search and action buttons row */
+.search-actions {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search-actions input[type="text"] {
+  flex-grow: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: 1.5px solid #a4c0f4;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  background-color: #f9fbff;
+  color: #3a3a3a;
+}
+
+.search-actions input[type="text"]:focus {
+  outline: none;
+  border-color: #3a6fd1;
+  box-shadow: 0 0 8px #3a6fd188;
+}
+
+.search-actions button {
+  background-color: #f0c14b;
+  border: 1.5px solid #d9b330;
+  color: #4a3f00;
+  padding: 12px 22px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.search-actions button:hover {
+  background-color: #d9b330;
+}
+
+/* Products grid with 3 columns */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 26px;
+}
+
+/* Product card */
+.product-card {
+  border: 1px solid #c4d3f6;
+  border-radius: 12px;
+  padding: 20px;
+  background-color: #f9fbff;
+  box-shadow: 0 4px 18px rgb(58 111 209 / 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 32px rgb(58 111 209 / 0.35);
+  border-color: #3a6fd1;
+}
+
+.product-image {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 18px;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 20px;
+  color: #1a2d5d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-price-stock {
+  font-size: 15px;
+  color: #526a9c;
+  margin-bottom: 18px;
+}
+
+.product-qty-add {
+  width: 100%;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-qty-add input[type="number"] {
+  width: 60px;
+  padding: 8px 10px;
+  font-size: 16px;
+  border: 1.5px solid #a4c0f4;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #f9fbff;
+  color: #3a3a3a;
+}
+
+.product-qty-add input[type="number"]:focus {
+  outline: none;
+  border-color: #3a6fd1;
+  box-shadow: 0 0 8px #3a6fd188;
+}
+
+.product-qty-add button {
+  background-color: #f0c14b;
+  border: 1.5px solid #d9b330;
+  padding: 10px 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #4a3f00;
+  transition: background-color 0.25s ease;
+}
+
+.product-qty-add button:hover {
+  background-color: #d9b330;
+}
+
+/* Cart styles */
+.cart-container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 24px;
+  background: #f9fbff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgb(58 111 209 / 0.2);
+}
+
+.cart-container h3 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1a2d5d;
+}
+
+.cart-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+  
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 12px 0;
+  border-bottom: 1px solid #c4d3f6;
+  color: #3a3a3a;
+}
+
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #c4d3f6;
+  border-radius: 6px;
+}
+
+.cart-item-info {
+  flex-grow: 1;
+  font-weight: 700;
+  color: #1a2d5d;
+}
+
+.cart-item button {
+  background-color: #d32f2f;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+  background-color: #9a2222;
+}
+
+/* Cart buttons */
+.cart-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.cart-buttons button {
+  padding: 12px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #3a6fd1;
+  transition: background-color 0.3s ease;
+}
+
+.cart-buttons button:hover {
+  background-color: #2a52a1;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .user-dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .search-actions {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .cart-buttons {
+    flex-direction: column;
+  }
+}
